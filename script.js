@@ -54,10 +54,8 @@ function getRandomSegment() {
 function spinWheel() {
     const randomSegment = getRandomSegment();
     const segmentIndex = segments.indexOf(randomSegment);
-    console.log(segmentIndex);
     const randomAngle = (segmentIndex * (360 / segments.length)) + (Math.random() * (360 / segments.length));
     const spinAngle = randomAngle + (360 * 5);
-    console.log(spinAngle % 360);
     
     canvas.style.transition = 'transform 4s ease-out';
     canvas.style.transform = `rotate(${-spinAngle}deg)`;
