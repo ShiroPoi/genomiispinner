@@ -56,14 +56,17 @@ function spinWheel() {
     const segmentIndex = segments.indexOf(randomSegment);
     const randomAngle = (segmentIndex * (360 / segments.length)) + (Math.random() * (360 / segments.length));
     const spinAngle = randomAngle + (360 * 5);
-    
+
     canvas.style.transition = 'transform 4s ease-out';
     canvas.style.transform = `rotate(${-spinAngle}deg)`;
-    
+
     setTimeout(() => {
-        resultDiv.textContent = `You won: ${randomSegment.label}`;
+        if (segmentIndex == 3)
+            resultDiv.textContent = `Missed a Shot, Join our IG Giveaway for Another Chance to Win`;
+        else
+            resultDiv.textContent = `You won: ${randomSegment.label}`;
         canvas.style.transition = '';
-        canvas.style.transform = `rotate(${-spinAngle%360}deg)`;
+        canvas.style.transform = `rotate(${-spinAngle % 360}deg)`;
     }, 4000);
 }
 
