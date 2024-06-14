@@ -26,7 +26,7 @@ button {
 }
 
 #result {
-    margin-top: 0px;
+    margin-top: 20px;
     font-size: 18px;
 }
 
@@ -39,5 +39,5 @@ button {
     position: absolute;
     top: 50%;
     right: 150px; /* Adjust this value as needed */
-    transform: translateY(-85%);
+    transform: translateY(-105%);
 }
