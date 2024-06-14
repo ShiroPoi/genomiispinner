@@ -1,4 +1,4 @@
-﻿const canvas = document.getElementById('wheelCanvas');
+const canvas = document.getElementById('wheelCanvas');
 const ctx = canvas.getContext('2d');
 const spinButton = document.getElementById('spinButton');
 const resultDiv = document.getElementById('result');
@@ -14,6 +14,7 @@ const segmentColors = ['#8270e3', '#80ddff', '#95e3c1', '#ffeb92'];
 const totalSegments = segments.length;
 const segmentAngle = (2 * Math.PI) / totalSegments;
 const startingAngle = 0;
+
 
 function drawWheel() {
     for (let i = 0; i < totalSegments; i++) {
@@ -34,6 +35,8 @@ function drawWheel() {
         ctx.font = '16px Arial';
         ctx.fillText(segments[i].label, canvas.width / 2 - 10, 10);
         ctx.restore();
+
+        resultDiv.textContent = `Spin the Wheel!`;
     }
 }
 
