@@ -69,23 +69,6 @@ function spinWheel() {
     }, 4000);
 }
 
-/*function spinWheel() {
-    const randomSegment = getRandomSegment();
-    const segmentIndex = segments.indexOf(randomSegment);
-    const randomAngle = (segmentIndex * segmentAngle) + (Math.random() * segmentAngle);
-    const spinAngle = randomAngle + (360 * 5);
-    const stopAngle = (2 * Math.PI) - randomAngle;
-
-    canvas.style.transition = 'transform 4s ease-out';
-    canvas.style.transform = `rotate(${spinAngle}deg)`;
-
-    setTimeout(() => {
-        canvas.style.transition = '';
-        canvas.style.transform = `rotate(${stopAngle}rad)`;
-        resultDiv.textContent = `You won: ${randomSegment.label}`;
-    }, 4000);
-}*/
-
 spinButton.addEventListener('click', spinWheel);
 
 drawWheel();
