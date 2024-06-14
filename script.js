@@ -1,4 +1,4 @@
-const canvas = document.getElementById('wheelCanvas');
+﻿const canvas = document.getElementById('wheelCanvas');
 const ctx = canvas.getContext('2d');
 const spinButton = document.getElementById('spinButton');
 const resultDiv = document.getElementById('result');
