@@ -61,10 +61,12 @@ function spinWheel() {
     canvas.style.transform = `rotate(${-spinAngle}deg)`;
 
     setTimeout(() => {
-        if (segmentIndex == 3)
+        if (segmentIndex == 3) {
             resultDiv.textContent = `Missed a Shot, Join our IG Giveaway for Another Chance to Win`;
-        else
+        }
+        else {
             resultDiv.textContent = `You won: ${randomSegment.label}`;
+        }
         canvas.style.transition = '';
         canvas.style.transform = `rotate(${-spinAngle % 360}deg)`;
     }, 4000);
