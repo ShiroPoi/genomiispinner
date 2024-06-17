@@ -4,9 +4,9 @@ const spinButton = document.getElementById('spinButton');
 const resultDiv = document.getElementById('result');
 
 const segments = [
-    { label: '🎁 $5 Gift Card', probability: 0.10 },
+    { label: '🎁 $5 Starbucks Gift Card', probability: 0.10 },
     { label: '🏅 Headband', probability: 0.15 },
-    { label: '🎟️ Clinique Prize Entry', probability: 0.45 },
+    { label: '🎟️ Grand Prize Raffle Entry', probability: 0.45 },
     { label: '❌ Missed a Shot', probability: 0.30 }
 ];
 
@@ -62,7 +62,7 @@ function spinWheel() {
 
     setTimeout(() => {
         if (segmentIndex == 3) {
-            resultDiv.textContent = `Missed a Shot, Join our IG Giveaway for Another Chance to Win`;
+            resultDiv.textContent = `Missed a Shot, Join our IG Giveaway @genomii.ai for Another Chance to Win`;
         }
         else {
             resultDiv.textContent = `You won: ${randomSegment.label}`;
