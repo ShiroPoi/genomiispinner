@@ -4,9 +4,9 @@ const spinButton = document.getElementById('spinButton');
 const resultDiv = document.getElementById('result');
 
 const segments = [
-    { label: '🎁 $5 Starbucks Gift Card', probability: 0.10 },
+    { label: '🎁 $5 Starbucks Gift Card', probability: 0.15 },
     { label: '🏅 Headband', probability: 0.15 },
-    { label: '🎟️ Grand Prize Raffle Entry', probability: 0.45 },
+    { label: '🎟️ Grand Prize Raffle Entry', probability: 0.40 },
     { label: '❌ Missed a Shot', probability: 0.30 }
 ];
 
