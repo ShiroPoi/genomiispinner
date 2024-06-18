@@ -61,7 +61,7 @@ function spinWheel() {
     canvas.style.transform = `rotate(${-spinAngle}deg)`;
 
     setTimeout(() => {
-        if (segmentIndex == 3) {
+        if (segmentIndex == 2) {
             resultDiv.textContent = `Missed a Shot, Join our IG Giveaway @genomii.ai for Another Chance to Win`;
         }
         else {
