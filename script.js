@@ -4,13 +4,13 @@ const spinButton = document.getElementById('spinButton');
 const resultDiv = document.getElementById('result');
 
 const segments = [
-    { label: '🎁 $5 Starbucks Gift Card', probability: 0.15 },
-    { label: '🏅 Headband', probability: 0.15 },
-    { label: '🎟️ Grand Prize Raffle Entry', probability: 0.40 },
+    { label: '🎁 $5 Starbucks Gift Card', probability: 0.25 },
+    //{ label: '🏅 Headband', probability: 0.15 },
+    { label: '🎟️ Grand Prize Raffle Entry', probability: 0.45 },
     { label: '❌ Missed a Shot', probability: 0.30 }
 ];
 
-const segmentColors = ['#8270e3', '#80ddff', '#95e3c1', '#ffeb92'];
+const segmentColors = ['#8270e3', '#95e3c1', '#ffeb92'];
 const totalSegments = segments.length;
 const segmentAngle = (2 * Math.PI) / totalSegments;
 const startingAngle = 0;
